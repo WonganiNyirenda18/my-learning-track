@@ -23,19 +23,28 @@ export default function Callback() {
 
     console.log("end")*/
 
-    //Synchronous callback
+    //asynchronous callback
+
+    function fetchData(callback) {
+        setTimeout(() => {
+            callback("Data loaded!")
+        }, 2000)
+    }
 
     function handleClick() {
-        console.log("Button clicked");
+        fetchData((message) => {
+            alert(message);
+        })
     }
+
+
 
     return (
         <div>
             <h1>Callback</h1>
 
-            <p>callback with button</p>
-
-            <button onClick={handleClick}>Click me</button>
+            <p>async callback</p>
+            <button onClick={handleClick}>Load Data</button>
 
         </div>
     );
