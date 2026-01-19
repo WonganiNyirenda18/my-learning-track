@@ -1,4 +1,4 @@
-import Callback from './Features/Callback';
+import Promise from './Features/Promise'
 import './App.css'
 
 function App() {
@@ -6,8 +6,7 @@ function App() {
 
   return (
     <>
-
-      <Callback />
+      <Promise />
     </>
   )
 }
