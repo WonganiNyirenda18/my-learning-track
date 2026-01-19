@@ -13,17 +13,29 @@ export default function Callback() {
 
     greet("John", sayHie);*/
 
+    /*callbakcs in javascript
+
     console.log("start")
 
     setTimeout(() => {
         console.log("2 seconds passed")
     }, 2000)
 
-    console.log("end")
+    console.log("end")*/
+
+    //Synchronous callback
+
+    function handleClick() {
+        console.log("Button clicked");
+    }
 
     return (
         <div>
             <h1>Callback</h1>
+
+            <p>callback with button</p>
+
+            <button onClick={handleClick}>Click me</button>
 
         </div>
     );
