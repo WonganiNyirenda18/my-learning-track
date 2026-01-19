@@ -1,7 +1,7 @@
 export default function Callback() {
 
 
-    {/*basic understanding of callbacks*/ }
+    /* {/*basic understanding of callbacks
     function greet(name, callback) {
         console.log("Hello, " + name);
         callback();
@@ -11,7 +11,15 @@ export default function Callback() {
         console.log("Goodbye");
     }
 
-    greet("John", sayHie);
+    greet("John", sayHie);*/
+
+    console.log("start")
+
+    setTimeout(() => {
+        console.log("2 seconds passed")
+    }, 2000)
+
+    console.log("end")
 
     return (
         <div>
