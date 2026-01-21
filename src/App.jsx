@@ -1,4 +1,4 @@
-import Promise from './Features/Promise'
+import AsyncAwait from './Features/AsyncAwait'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Promise />
+      <AsyncAwait />
     </>
   )
 }
