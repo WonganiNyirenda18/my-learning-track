@@ -17,9 +17,26 @@ export default function UseEffect() {
 } */
 
 export default function UseEffect() {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+            const data = await res.json();
+            setData(data);
+        }
+        fetchData();
+    }, []);
+
+
     return (
         <>
             <h1>UseEffect</h1>
+            <h2>Posts</h2>
+            {data.map(post => (
+                <p key={post.id}>{post.title}</p>
+            ))}
         </>
     );
 }
