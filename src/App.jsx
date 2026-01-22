@@ -1,4 +1,4 @@
-import AsyncAwait from './Features/AsyncAwait'
+import UseEffect from './Features/UseEffect'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <AsyncAwait />
+      <UseEffect />
     </>
   )
 }
