@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+/*
 export default function UseEffect() {
 
     const [count, setCount] = useState(0);
@@ -12,6 +12,14 @@ export default function UseEffect() {
         <>
             <h1>UseEffect</h1>
             <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+        </>
+    );
+} */
+
+export default function UseEffect() {
+    return (
+        <>
+            <h1>UseEffect</h1>
         </>
     );
 }
