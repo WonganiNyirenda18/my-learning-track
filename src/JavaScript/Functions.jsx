@@ -4,10 +4,12 @@ export default function Functions() {
         console.log("My name is Wongani Nyirenda");
     }
 
+    text();
+
     return (
         <>
             <h1>Learning functions</h1>
-            console.log(text);
+
         </>
     )
 }
