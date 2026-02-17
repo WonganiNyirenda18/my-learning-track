@@ -17,7 +17,7 @@ export default function Functions() {
 
     console.log(power(2, 10)); */
 
-    //Binding and Scopes
+    /*Binding and Scopes
 
     let x = 10;
 
@@ -27,7 +27,18 @@ export default function Functions() {
         console.log(x + y + z);
     }
 
-    console.log(x + z);
+    console.log(x + z);*/
+
+    const humus = function(factor) {
+        const ingredient = function(amount, unit, name) {
+            let ingredientAmount = amount * factor;
+            if (ingredientAmount > 1) {
+                unit += "s";
+            }
+
+            console.log(`${ingredientAmount}  ${unit} ${name}`)
+        }
+    }
 
 
 
